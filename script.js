@@ -152,14 +152,14 @@ const downloadResume = document.getElementById('downloadResume');
 const viewResume = document.getElementById('viewResume');
 
 // Resume file path - Place your resume PDF in the assets/resume folder
-const resumePath = 'assets/resume/Rajshri_Resume.pdf';
+const resumePath = 'assets/resume/Rajshri_Resume_v2.pdf';
 
 downloadResume.addEventListener('click', (e) => {
     e.preventDefault();
     // Create a temporary anchor element to trigger download
     const link = document.createElement('a');
     link.href = resumePath;
-    link.download = 'Rajshri_Resume.pdf';
+    link.download = 'Rajshri_Resume_v2.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
